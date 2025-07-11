@@ -1,0 +1,109 @@
+{
+  "artifacts": [],
+  "command": "my_main",
+  "experiment": {
+    "base_dir": "/home/madrl/code/EvoL_SMAC_opensource/src",
+    "dependencies": [
+      "numpy==1.23.2",
+      "PyYAML==5.3.1",
+      "sacred==0.8.6",
+      "torch==2.4.1"
+    ],
+    "mainfile": "main.py",
+    "name": "pymarl",
+    "repositories": [],
+    "sources": [
+      [
+        "main.py",
+        "_sources/main_a08c327abe9c02d3a3d83ef71b26575b.py"
+      ],
+      [
+        "utils/logging.py",
+        "_sources/logging_ce9a261c391cbeae67129d3d806d06da.py"
+      ]
+    ]
+  },
+  "heartbeat": "2025-05-10T10:06:44.265345",
+  "host": {
+    "ENV": {},
+    "cpu": "Intel(R) Xeon(R) Gold 6330 CPU @ 2.00GHz",
+    "gpus": {
+      "driver_version": "535.104.12",
+      "gpus": [
+        {
+          "model": "NVIDIA A100-PCIE-40GB",
+          "persistence_mode": false,
+          "total_memory": 40960
+        },
+        {
+          "model": "NVIDIA A100-PCIE-40GB",
+          "persistence_mode": false,
+          "total_memory": 40960
+        },
+        {
+          "model": "NVIDIA A100-PCIE-40GB",
+          "persistence_mode": false,
+          "total_memory": 40960
+        },
+        {
+          "model": "NVIDIA A100-PCIE-40GB",
+          "persistence_mode": false,
+          "total_memory": 40960
+        }
+      ]
+    },
+    "hostname": "zcm",
+    "os": [
+      "Linux",
+      "Linux-3.10.0-1160.119.1.el7.x86_64-x86_64-with-glibc2.17"
+    ],
+    "python_version": "3.8.19"
+  },
+  "meta": {
+    "command": "my_main",
+    "config_updates": {
+      "checkpoint_path": "results/models/evol_MMM2",
+      "env_args": {
+        "map_name": "MMM2"
+      },
+      "evaluate": true,
+      "runner": "episode"
+    },
+    "named_configs": [],
+    "options": {
+      "--beat-interval": null,
+      "--capture": null,
+      "--comment": null,
+      "--debug": false,
+      "--enforce_clean": false,
+      "--file_storage": null,
+      "--force": false,
+      "--help": false,
+      "--id": null,
+      "--loglevel": null,
+      "--mongo_db": null,
+      "--name": null,
+      "--pdb": false,
+      "--print-config": false,
+      "--priority": null,
+      "--queue": false,
+      "--s3": null,
+      "--sql": null,
+      "--tiny_db": null,
+      "--unobserved": false,
+      "COMMAND": null,
+      "UPDATE": [
+        "env_args.map_name=MMM2",
+        "checkpoint_path=results/models/evol_MMM2",
+        "evaluate=True",
+        "runner=episode"
+      ],
+      "help": false,
+      "with": true
+    }
+  },
+  "resources": [],
+  "result": null,
+  "start_time": "2025-05-10T10:05:54.187611",
+  "status": "RUNNING"
+}

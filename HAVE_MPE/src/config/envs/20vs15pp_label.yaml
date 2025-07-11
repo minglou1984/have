@@ -1,0 +1,29 @@
+env: "mpe"
+
+env_args:
+  key: predator_prey_label # 5 vs. 2
+  num_agents: 20
+  num_landmarks: 15
+  n_allies: 19
+  n_enemies: 15
+  own_feats_dim: 4 # position, velocity
+  ally_feats_dim: 4 # relative position, entity lable
+  enemy_feats_dim: 4 # relative position, entity lable
+  time_limit: 25
+  reward_discrete: False
+  reward_rendundant: False # original reward function
+#  obs_entity_mode: True
+#  state_entity_mode: True
+
+#logs
+test_greedy: True
+test_nepisode: 100 # 100, 10
+test_interval: 10000
+log_interval: 10000
+animation_interval: 500000
+animation_interval_evaluation: 100 # only for evaluate mode
+runner_log_interval: 10000
+learner_log_interval: 10000
+t_max: 2050000
+obs_agent_id: False # Include the agent's one_hot id in the observation, default: True, False for transfer
+obs_last_action: False # Include the agent's last action (one_hot) in the observation, default: True, False for transfer

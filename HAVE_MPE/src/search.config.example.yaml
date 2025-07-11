@@ -1,0 +1,55 @@
+exclude: null
+grid-search:
+
+  "--config":
+    - "mappo_belief"
+
+  lr:
+    - 0.0001
+    - 0.0005
+#    - 0.0010
+
+  vae_lr:
+      - 0.005
+      - 0.0001
+      - 0.0005
+
+  standardise_rewards:
+    - False
+
+  use_rnn:
+    - True
+
+  target_update_interval_or_tau:
+    - 0.001
+#    - 0.01
+
+  hidden_dim:
+#    - 128
+    - 64
+
+  evaluation_epsilon:
+    - 0.0
+
+#  epsilon_anneal_time:
+#    - 50000
+#    - 200000
+
+  t_max:
+    - 4050000
+  test_nepisode:
+    - 100
+  test_interval:
+    - 25000
+  log_interval:
+    - 25000
+  save_model_interval:
+    - 500000
+  save_model:
+    - True
+    
+grid-search-groups:
+  env0:
+    - "--env-config": "gymma"
+    - env_args.key: mpe:CooperativeNavigationPartialObs-v1
+    - env_args.time_limit: 25

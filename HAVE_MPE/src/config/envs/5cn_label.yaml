@@ -1,0 +1,34 @@
+env: "mpe"
+
+env_args:
+  key: cooperative_navigation_label # cooperative_navigation
+  num_agents: 5
+  num_landmarks: 5
+  n_allies: 4
+  n_enemies: 5
+  own_feats_dim: 4 # position, velocity
+  ally_feats_dim: 4 # relative position, entity lable
+  enemy_feats_dim: 4 # relative position, entity lable
+  time_limit: 25
+  reward_discrete: False
+  reward_rendundant: False # original reward function
+#  obs_entity_mode: True
+#  state_entity_mode: True
+
+seed: 896818870
+
+#logs
+test_greedy: True
+test_nepisode: 100
+test_interval: 10000
+log_interval: 10000
+runner_log_interval: 10000
+learner_log_interval: 10000
+t_max: 2050000
+obs_agent_id: False # Include the agent's one_hot id in the observation, default: True, False for transfer
+obs_last_action: False # Include the agent's last action (one_hot) in the observation, default: True, False for transfer
+
+# for test 5CN
+#evaluate: True # False, True, Evaluate model for test_nepisode episodes and quit (no training)
+#checkpoint_path: "../results_spread/models/evol_5cn_label"
+#runner: "gymma_episode" # episode
